@@ -1,0 +1,68 @@
+{
+    "rooms": [
+        {
+            "id": 1,
+            "name": "Deluxe Room",
+            "category": "Luxury",
+            "price": 299,
+            "rating": 4.8,
+            "image": "hotel room.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Executive Suite",
+            "category": "Suite",
+            "price": 499,
+            "rating": 4.9,
+            "image": "hotel room2.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Executive Suite",
+            "category": "Suite",
+            "price": 499,
+            "rating": 4.9,
+            "image": "hotel room3.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Executive Suite",
+            "category": "Suite",
+            "price": 499,
+            "rating": 4.9,
+            "image": "hotel room4.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Executive Suite",
+            "category": "Suite",
+            "price": 499,
+            "rating": 4.9,
+            "image": "hotel room5.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Executive Suite",
+            "category": "Suite",
+            "price": 499,
+            "rating": 4.9,
+            "image": "hotel room6.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Executive Suite",
+            "category": "Suite",
+            "price": 499,
+            "rating": 4.9,
+            "image": "hotel room7.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Executive Suite",
+            "category": "Suite",
+            "price": 499,
+            "rating": 4.9,
+            "image": "hotel room8.jpg"
+        }
+    ]
+}

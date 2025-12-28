@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Booking History</title>
+    <link rel="stylesheet" href="hotel.css">
+</head>
+
+<body>
+
+    <h2 style="text-align:center">My Booking History</h2>
+    <ul id="list"></ul>
+
+    <script src="guard.js"></script>
+    <script>
+        const user = localStorage.getItem("currentUser");
+        const history = JSON.parse(localStorage.getItem("history")) || [];
+
+        document.getElementById("list").innerHTML = history
+            .filter(h => h.user === user)
+            .map(h => `<li>${h.room} - ${h.date}</li>`)
+            .join("");
+    </script>
+
+</body>
+
+</html>

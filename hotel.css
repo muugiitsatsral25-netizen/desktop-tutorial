@@ -12,43 +12,73 @@ body {
 }
 
 /* Main Navigation */
-.main-nav {
-    background-color: white;
-    padding: 20px 40px;
+.header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    position: relative;
-    z-index: 100;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    border-radius: 50px;
 }
 
+/* LOGO */
 .logo {
-    font-size: 28px;
-    font-weight: 700;
-    color: #456b65;
-    letter-spacing: 1px;
+    font-size: 26px;
+    font-weight: bold;
+    color: #3f635b;
 }
 
-.nav-links {
+/* NAV */
+.nav {
     display: flex;
-    list-style: none;
-    gap: 5px;
+    gap: 25px;
+    align-items: center;
 }
 
-.nav-links li a {
+.nav a {
     text-decoration: none;
     color: #333;
-    padding: 10px 20px;
     font-weight: 500;
-    transition: color 0.3s;
-    font-size: 15px;
 }
 
-.nav-links li a:hover,
-.nav-links li a.active {
+.nav :hover {
+    text-transform: initial;
     color: #456b65;
 }
+
+/* AUTH */
+.auth {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.auth input {
+    width: 130px;
+    padding: 6px 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login-btn {
+    padding: 6px 14px;
+    border: none;
+    background: #3f635b;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.register-btn {
+    padding: 6px 14px;
+    border: 1px solid #3f635b;
+    background: transparent;
+    color: #3f635b;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
 
 .book-now-btn {
     background-color: #456b65;
@@ -173,7 +203,7 @@ body {
 
 .room-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 5px 25px rgba(69, 107, 101, 0.3);
+    box-shadow: 0 5px 25px #456b65;
 }
 
 .room-image {
@@ -426,6 +456,11 @@ body {
     text-align: center;
 }
 
+.p {
+    position: relative;
+    text-align: center;
+}
+
 .book-room-btn {
     background-color: #456b65;
     color: white;
@@ -625,4 +660,102 @@ body {
     .amenities-list ul {
         grid-template-columns: 1fr;
     }
+}
+
+.luxury-auth {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #f9f9f9;
+    padding: 10px 15px;
+    border-radius: 30px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.luxury-auth input {
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #ccc;
+    padding: 6px 8px;
+    width: 140px;
+    outline: none;
+    font-size: 14px;
+}
+
+.luxury-auth input:focus {
+    border-color: #456b65;
+}
+
+.luxury-auth .login-btn {
+    background: #456b65;
+    color: white;
+    border: none;
+    padding: 8px 22px;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.luxury-auth .login-btn:hover {
+    background: #365349;
+    transform: translateY(-1px);
+}
+
+.login-wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-card {
+    background: white;
+    padding: 50px 40px;
+    width: 380px;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-card h2 {
+    font-size: 28px;
+    color: #456b65;
+    margin-bottom: 10px;
+}
+
+.login-card .sub {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.login-card input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.login-card button {
+    width: 100%;
+    background: #456b65;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.login-card button:hover {
+    background: #365349;
+}
+
+.login-card .small {
+    margin-top: 20px;
+    font-size: 13px;
 }
